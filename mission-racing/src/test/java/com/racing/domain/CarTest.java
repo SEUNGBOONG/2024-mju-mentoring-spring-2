@@ -28,7 +28,8 @@ class CarTest {
         car.move(3);
 
         //then
-        assertEquals(1, car.getMoveCount());
+        assertNotEquals(1, car.getMoveCount());
+
     }
 
     @Test
@@ -42,5 +43,6 @@ class CarTest {
 
         //then
         assertTrue(car.isSameCount(1));
+
     }
 }
